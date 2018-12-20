@@ -1,0 +1,25 @@
+# task 1
+
+# a.
+added = 236 + 72
+# b.
+divided = 3500/70
+# c.
+cubed = 5**3
+# d.
+modulo = 39 % 7
+
+# task 2
+
+celtemp = int(input("Enter temperature in Celsius:\n"))
+fehtemp = float(celtemp / 5) * 9 + 32
+print(fehtemp if fehtemp != int(fehtemp) else int(fehtemp))  # ternary operator was added to make output look nicer.
+
+# task 3
+
+price = float(input("Enter product\'s price:\n"))
+cash_given = float(input("Enter total amount of money given:\n"))
+if cash_given < price:
+    print("Not enough money was given to pay the product")
+else:
+    print(str(float(cash_given - price)) +" £")
