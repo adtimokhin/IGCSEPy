@@ -24,6 +24,7 @@ def define_artist(artist):
     else:
         print("entered type of artist was not identified")
         define_artist(artist)
+        return
 
 
 def print_list(name, list):
@@ -35,7 +36,7 @@ def print_list(name, list):
         print(i)
 
 
-for i in range(2):
+for i in range(10): # number 10 is a number of artists
     name = input("enter an artist name")
     master_list.append(name)
     define_artist(name)
